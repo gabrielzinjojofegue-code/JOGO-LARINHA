@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 25px 14px;
+  color: #fff4df;
+  background:
+    radial-gradient(circle at top left, #49315f, transparent 40%),
+    #17162b;
+  font-family: "Nunito", sans-serif;
+}
+
+.game-shell {
+  width: min(1080px, 100%);
+  margin: auto;
+}
+
+header {
+  margin-bottom: 18px;
+}
+
+.eyebrow {
+  color: #ff8eb5;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 8px 0;
+  font-size: clamp(26px, 5vw, 43px);
+}
+
+h1 span {
+  color: #ff8eb5;
+}
+
+.subtitle,
+.tip {
+  color: #c5c2db;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.stats div {
+  padding: 12px 16px;
+  border: 1px solid #ffffff25;
+  border-radius: 10px;
+  background: #ffffff0c;
+  font-size: 12px;
+}
+
+.stats strong {
+  margin-left: 8px;
+  color: #ffd66b;
+}
+
+.game-frame {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #ffffff25;
+  border-radius: 14px;
+  background: #273653;
+  box-shadow: 0 18px 50px #0005;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: #111126bd;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.overlay-card {
+  width: min(500px, 100%);
+  padding: 28px;
+  text-align: center;
+  border: 1px solid #ffffff30;
+  border-radius: 18px;
+  background: #24223df5;
+}
+
+.overlay-card h2 {
+  font-size: clamp(24px, 4vw, 36px);
+}
+
+.overlay-card p:not(.eyebrow) {
+  color: #d2cfe2;
+  line-height: 1.6;
+}
+
+button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffd66b, #ff9ebd);
+  color: #30213a;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+  margin-top: 14px;
+  color: #d2cfe2;
+  font-size: 13px;
+}
+
+kbd {
+  display: inline-block;
+  padding: 5px 7px;
+  border: 1px solid #ffffff35;
+  border-radius: 5px;
+  background: #ffffff12;
+  color: white;
+  font-size: 11px;
+}
+
+.tip {
+  text-align: center;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px 8px;
+  }
+
+  .overlay-card {
+    padding: 16px;
+  }
+
+  .controls {
+    gap: 4px 12px;
+  }
+}

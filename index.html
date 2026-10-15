@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Resgate do Príncipe ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <p class="eyebrow">UMA AVENTURA PIXEL ART</p>
+      <h1>O Resgate do <span>Príncipe</span> ❤️</h1>
+      <p class="subtitle">Derrote os inimigos e resgate seu príncipe!</p>
+      <section class="stats">
+        <div>Fase <strong id="levelLabel">1 / 3</strong></div>
+        <div>Vida <strong id="healthLabel">♥ ♥ ♥</strong></div>
+        <div>Pontos <strong id="scoreLabel">0</strong></div>
+        <div>Inimigos <strong id="enemyLabel">0</strong></div>
+      </section>
+    </header>
+
+    <section class="game-frame">
+      <canvas id="game" width="960" height="540"></canvas>
+      <div class="overlay" id="overlay">
+        <div class="overlay-card">
+          <p class="eyebrow">SUA AVENTURA COMEÇA AQUI</p>
+          <h2 id="overlayTitle">O Resgate do Príncipe</h2>
+          <p id="overlayText">Atravesse a floresta, o castelo e a caverna. Derrote os inimigos e encontre o príncipe!</p>
+          <button id="startButton">Começar aventura</button>
+        </div>
+      </div>
+    </section>
+
+    <nav class="controls">
+      <span><kbd>A</kbd> <kbd>D</kbd> ou setas: mover</span>
+      <span><kbd>W</kbd> / <kbd>↑</kbd> / <kbd>Espaço</kbd>: pular</span>
+      <span><kbd>J</kbd> ou <kbd>X</kbd>: atacar</span>
+      <span><kbd>R</kbd>: reiniciar</span>
+    </nav>
+    <p class="tip">Dica: aproxime-se dos inimigos e use sua espada!</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
